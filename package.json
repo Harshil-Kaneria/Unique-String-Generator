@@ -1,0 +1,24 @@
+{
+  "name": "unique-string-generator",
+  "version": "1.0.3",
+  "description": "A Javascript Function for Generating 99.9% a Random String.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harshil-Kaneria/Unique-String-Generator.git"
+  },
+  "keywords": [
+    "Unique-String",
+    "Random-String",
+    "Unique-Token"
+  ],
+  "author": "Harshil Kaneria",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Harshil-Kaneria/Unique-String-Generator/issues"
+  },
+  "homepage": "https://github.com/Harshil-Kaneria/Unique-String-Generator#readme"
+}
