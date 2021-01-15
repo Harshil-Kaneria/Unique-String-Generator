@@ -26,10 +26,33 @@ $ npm install unique-string-generator --save
 
 ```javascript
 var UniqueStringGenerator = require('unique-string-generator');
-UniqueStringGenerator();
-// 'NjAyXzE1OTkxNDc3ODMxMDdfMjA0'
-// 'OTU5XzE1OTkxNDc3ODQxMTZfMTE2'
-// 'MjE3XzE1OTkxNDc3ODUxMTVfNTQ5'
+UniqueStringGenerator.UniqueString();
+// MjU2XzE2MTA2ODU0Nzc0NTZfMTc0
+// MjM5XzE2MTA2ODU0Nzc0NTZfMzAx
+// MjY2XzE2MTA2ODU0Nzc0NTdfMTE=
+
+
+var UniqueStringGenerator = require('unique-string-generator');
+UniqueStringGenerator.UniqueNumber();
+// 5051610685477457148
+// 721610685477457680
+// 4911610685477457351
+
+
+var UniqueStringGenerator = require('unique-string-generator');
+UniqueStringGenerator.UniqueStringId();
+// NDc4-MTYxMDY4NTQ3NzQ1Nw==-NDI1
+// MTIx-MTYxMDY4NTQ3NzQ1Nw==-MzE3
+// OTA1-MTYxMDY4NTQ3NzQ1Nw==-Nzcy
+
+
+var UniqueStringGenerator = require('unique-string-generator');
+UniqueStringGenerator.UniqueNumberId();
+// 268-1610685477457-344
+// 562-1610685477457-949
+// 418-1610685477457-740
+
+
 ```
 
 ***
