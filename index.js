@@ -1,18 +1,19 @@
 // Developed By Harshil Kaneria
-var UniqueString = () => {
-    return Buffer.from((Math.floor(Math.random() * 1000) + 1).toString()+"_"+Date.now()+"_"+(Math.floor(Math.random() * 1000) + 1).toString()).toString('base64'); // Basically This is Return Encoding in Base64 of RandomNumber(1-1000)+"_"+CurrentTimeInMilliSecond +"_"+RandomNumber(1-1000)
-};
+const {Base64} = require('js-base64');
 
-var UniqueNumber = () => {
-    return (Math.floor(Math.random() * 1000) + 1).toString()+Date.now()+(Math.floor(Math.random() * 1000) + 1).toString(); // Basically This is Return RandomNumber(1-1000)+CurrentTimeInMilliSecond+RandomNumber(1-1000)
-};
+// Random Number Generator
+const RandomNumber = () => (Math.floor(Math.random() * 1000) + 1)
 
-var UniqueStringId = () => {
-    return Buffer.from((Math.floor(Math.random() * 1000) + 1).toString()).toString('base64')+"-"+Buffer.from(Date.now().toString()).toString('base64')+"-"+Buffer.from((Math.floor(Math.random() * 1000) + 1).toString()).toString('base64'); // Basically This is Return Encoding in Base64 of RandomNumber(1-1000)+"-"+Encoding in Base64 of CurrentTimeInMilliSecond +"-"+Encoding in Base64 of RandomNumber(1-1000)
-};
+// Basically This is Return Encoding in Base64 of RandomNumber(1-1000)+"_"+CurrentTimeInMilliSecond +"_"+RandomNumber(1-1000)
+const UniqueString = () => Base64.encode(`${RandomNumber()}_${Date.now()}_${RandomNumber()}`)
 
-var UniqueNumberId = () => {
-    return (Math.floor(Math.random() * 1000) + 1).toString()+"-"+Date.now()+"-"+(Math.floor(Math.random() * 1000) + 1).toString(); // Basically This is Return RandomNumber(1-1000)+"-"+CurrentTimeInMilliSecond +"-"+RandomNumber(1-1000)
-};
+// Basically This is Return RandomNumber(1-1000)+CurrentTimeInMilliSecond+RandomNumber(1-1000)
+const UniqueNumber = () => `${RandomNumber()}${Date.now()}${RandomNumber()}`
+
+// Basically This is Return Encoding in Base64 of RandomNumber(1-1000)+"-"+Encoding in Base64 of CurrentTimeInMilliSecond +"-"+Encoding in Base64 of RandomNumber(1-1000)
+const UniqueStringId = () => Base64.encode(`${RandomNumber()}`)+"-"+Base64.encode(`${Date.now()}`)+"-"+Base64.encode(`${RandomNumber()}`) 
+
+// Basically This is Return RandomNumber(1-1000)+"-"+CurrentTimeInMilliSecond +"-"+RandomNumber(1-1000)
+const UniqueNumberId = () => `${RandomNumber()}-${Date.now()}-${RandomNumber()}` 
 
 module.exports = {UniqueString,UniqueNumber,UniqueStringId,UniqueNumberId};
