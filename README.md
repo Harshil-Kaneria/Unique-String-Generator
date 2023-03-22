@@ -1,6 +1,6 @@
 # Unique-String-Generator
 
-A Javascript Function for Generating 99.9% a Random String.
+The Unique String Generator is a JavaScript package that generates a random string, number or ID that is almost 100% unique each time it's called. It can be used for a variety of purposes such as one-time sessions, email verification, pre-user IDs, activation codes, and more.
 
 ***
 ## Why You Can Use This
@@ -15,6 +15,11 @@ A Javascript Function for Generating 99.9% a Random String.
 - You Can Use this for multi-purpose like a one-time session, email verification, preuserid , activation code, and many more applications.
 
 ***
+## Notice
+
+- UniqueOTP and UniqueCharOTP function is recently added and this both function is not generate 99.9% Unique because of some limitation but you can use as OTP & 2FA Purpose.
+
+***
 ## Installation
 
 ```bash
@@ -25,33 +30,16 @@ $ npm install unique-string-generator --save
 ## Usage
 
 ```javascript
-const UniqueStringGenerator = require('unique-string-generator');
-UniqueStringGenerator.UniqueString();
-// MjU2XzE2MTA2ODU0Nzc0NTZfMTc0
-// MjM5XzE2MTA2ODU0Nzc0NTZfMzAx
-// MjY2XzE2MTA2ODU0Nzc0NTdfMTE=
+const { UniqueString, UniqueNumber, UniqueStringId,UniqueNumberId,UniqueOTP,UniqueCharOTP } = require('unique-string-generator');
 
-
-const UniqueStringGenerator = require('unique-string-generator');
-UniqueStringGenerator.UniqueNumber();
-// 5051610685477457148
-// 721610685477457680
-// 4911610685477457351
-
-
-const UniqueStringGenerator = require('unique-string-generator');
-UniqueStringGenerator.UniqueStringId();
-// NDc4-MTYxMDY4NTQ3NzQ1Nw==-NDI1
-// MTIx-MTYxMDY4NTQ3NzQ1Nw==-MzE3
-// OTA1-MTYxMDY4NTQ3NzQ1Nw==-Nzcy
-
-
-const UniqueStringGenerator = require('unique-string-generator');
-UniqueStringGenerator.UniqueNumberId();
-// 268-1610685477457-344
-// 562-1610685477457-949
-// 418-1610685477457-740
-
+console.log(UniqueString()) // ODgyXzE2Nzk1MDQyMDcxNDZfNDkx 
+console.log(UniqueNumber()) // 9861679504207152802 
+console.log(UniqueStringId()) // MzUz-MTY3OTUwNDIwNzE1Mg==-OTU3 
+console.log(UniqueNumberId()) // 613-1679504207152-896 
+console.log(UniqueOTP()) // 741187 
+console.log(UniqueOTP(4)) // 9298 
+console.log(UniqueCharOTP()) // KKOEGR 
+console.log(UniqueCharOTP(4)) // QCOS 
 
 ```
 
