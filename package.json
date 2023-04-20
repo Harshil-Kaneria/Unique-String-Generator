@@ -1,6 +1,6 @@
 {
   "name": "unique-string-generator",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A Javascript Function for Generating 99.9% a Random String.",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/Harshil-Kaneria/Unique-String-Generator/issues"
   },
-  "homepage": "https://github.com/Harshil-Kaneria/Unique-String-Generator#readme",
+  "homepage": "https://unique-string-generator.vercel.app",
   "dependencies": {
     "js-base64": "3.7.2"
   }
