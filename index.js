@@ -1,5 +1,6 @@
 // Developed By Harshil Kaneria
 const {Base64} = require('js-base64');
+const uuid = require('uuid');
 // Random Number Generator
 const RandomNumber = () => (Math.floor(Math.random() * 1000) + 1)
 // Basically This is Return Encoding in Base64 of RandomNumber(1-1000)+"_"+CurrentTimeInMilliSecond +"_"+RandomNumber(1-1000)
@@ -22,4 +23,8 @@ const UniqueCharOTP = (length = 6) => {
     }
     return otp
 }
-module.exports = {UniqueString,UniqueNumber,UniqueStringId,UniqueNumberId,UniqueOTP,UniqueCharOTP};
+// Generate Color HEX Code
+const HEXColor = (isWithoutSymbole=false) => {
+    return isWithoutSymbole?Math.floor(Math.random() * 16777215).toString(16):'#'+Math.floor(Math.random() * 16777215).toString(16)
+}
+module.exports = {UniqueString,UniqueNumber,UniqueStringId,UniqueNumberId,UniqueOTP,UniqueCharOTP,HEXColor,uuid};

@@ -1,6 +1,6 @@
 # Unique-String-Generator
 
-The Unique String Generator is a JavaScript package that generates a random string, number or ID that is almost 100% unique each time it's called. It can be used for a variety of purposes such as one-time sessions, email verification, pre-user IDs, activation codes, and more.
+The Unique String Generator is a JavaScript package that generates a random string, number or ID that is almost 100% unique each time it's called. It can be used for a variety of purposes such as one-time sessions, email verification, pre-user IDs, activation codes, and more. Recetly we are adding full support of [uuid](https://www.npmjs.com/package/uuid) world best library for ids with in this library.
 
 ***
 ## Playground / Demo / Home page
@@ -35,7 +35,7 @@ $ npm install unique-string-generator
 ## Usage
 
 ```javascript
-const { UniqueString, UniqueNumber, UniqueStringId,UniqueNumberId,UniqueOTP,UniqueCharOTP } = require('unique-string-generator');
+const { UniqueString, UniqueNumber, UniqueStringId,UniqueNumberId,UniqueOTP,UniqueCharOTP,HEXColor,uuid } = require('unique-string-generator');
 
 UniqueString() // ODgyXzE2Nzk1MDQyMDcxNDZfNDkx 
 UniqueNumber() // 9861679504207152802 
@@ -45,11 +45,15 @@ UniqueOTP() // 741187
 UniqueOTP(4) // 9298 
 UniqueCharOTP() // KKOEGR 
 UniqueCharOTP(4) // QCOS 
+HEXColor() // #314511
+HEXColor(true) // 687e61
+uuid.v4() // 772716b8-e6e2-47ac-95e9-e8d99ce35124
+uuid.validate(uuid.v4()) // true
 
 ```
 
 ```javascript
-import { UniqueString, UniqueNumber, UniqueStringId,UniqueNumberId,UniqueOTP,UniqueCharOT } from 'unique-string-generator';
+import { UniqueString, UniqueNumber, UniqueStringId,UniqueNumberId,UniqueOTP,UniqueCharOTP,HEXColor,uuid } from 'unique-string-generator';
 
 UniqueString() // ODgyXzE2Nzk1MDQyMDcxNDZfNDkx 
 UniqueNumber() // 9861679504207152802 
@@ -59,6 +63,10 @@ UniqueOTP() // 741187
 UniqueOTP(4) // 9298 
 UniqueCharOTP() // KKOEGR 
 UniqueCharOTP(4) // QCOS 
+HEXColor() // #314511
+HEXColor(true) // 687e61
+uuid.v4() // 772716b8-e6e2-47ac-95e9-e8d99ce35124
+uuid.validate(uuid.v4()) // true
 
 ```
 
