@@ -5,7 +5,7 @@ The Unique String Generator is a JavaScript package that generates a random stri
 ***
 ## Playground / Demo / Home page
 
-[https://unique-string-generator.vercel.app](https://unique-string-generator.vercel.app).
+[https://unique-string-generator.vercel.app](https://unique-string-generator.vercel.app)
 
 ***
 ## Why You Can Use This
@@ -28,7 +28,7 @@ The Unique String Generator is a JavaScript package that generates a random stri
 ## Installation
 
 ```bash
-$ npm install unique-string-generator --save
+$ npm install unique-string-generator
 ```
 
 ***
@@ -37,28 +37,28 @@ $ npm install unique-string-generator --save
 ```javascript
 const { UniqueString, UniqueNumber, UniqueStringId,UniqueNumberId,UniqueOTP,UniqueCharOTP } = require('unique-string-generator');
 
-console.log(UniqueString()) // ODgyXzE2Nzk1MDQyMDcxNDZfNDkx 
-console.log(UniqueNumber()) // 9861679504207152802 
-console.log(UniqueStringId()) // MzUz-MTY3OTUwNDIwNzE1Mg==-OTU3 
-console.log(UniqueNumberId()) // 613-1679504207152-896 
-console.log(UniqueOTP()) // 741187 
-console.log(UniqueOTP(4)) // 9298 
-console.log(UniqueCharOTP()) // KKOEGR 
-console.log(UniqueCharOTP(4)) // QCOS 
+UniqueString() // ODgyXzE2Nzk1MDQyMDcxNDZfNDkx 
+UniqueNumber() // 9861679504207152802 
+UniqueStringId() // MzUz-MTY3OTUwNDIwNzE1Mg==-OTU3 
+UniqueNumberId() // 613-1679504207152-896 
+UniqueOTP() // 741187 
+UniqueOTP(4) // 9298 
+UniqueCharOTP() // KKOEGR 
+UniqueCharOTP(4) // QCOS 
 
 ```
 
 ```javascript
-import { UniqueCharOTP, UniqueNumber, UniqueNumberId, UniqueOTP, UniqueString, UniqueStringId } from 'unique-string-generator');
+import { UniqueString, UniqueNumber, UniqueStringId,UniqueNumberId,UniqueOTP,UniqueCharOT } from 'unique-string-generator';
 
-console.log(UniqueString()) // ODgyXzE2Nzk1MDQyMDcxNDZfNDkx 
-console.log(UniqueNumber()) // 9861679504207152802 
-console.log(UniqueStringId()) // MzUz-MTY3OTUwNDIwNzE1Mg==-OTU3 
-console.log(UniqueNumberId()) // 613-1679504207152-896 
-console.log(UniqueOTP()) // 741187 
-console.log(UniqueOTP(4)) // 9298 
-console.log(UniqueCharOTP()) // KKOEGR 
-console.log(UniqueCharOTP(4)) // QCOS 
+UniqueString() // ODgyXzE2Nzk1MDQyMDcxNDZfNDkx 
+UniqueNumber() // 9861679504207152802 
+UniqueStringId() // MzUz-MTY3OTUwNDIwNzE1Mg==-OTU3 
+UniqueNumberId() // 613-1679504207152-896 
+UniqueOTP() // 741187 
+UniqueOTP(4) // 9298 
+UniqueCharOTP() // KKOEGR 
+UniqueCharOTP(4) // QCOS 
 
 ```
 

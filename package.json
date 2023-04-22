@@ -1,7 +1,7 @@
 {
   "name": "unique-string-generator",
-  "version": "1.0.7",
-  "description": "A Javascript Function for Generating 99.9% a Random String.",
+  "version": "1.0.8",
+  "description": "A Javascript Functions for Generating 99.9% a Random String.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
