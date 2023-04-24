@@ -1,6 +1,6 @@
 {
   "name": "unique-string-generator",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Javascript Functions for Generating 99.9% a Random String.",
   "main": "index.js",
   "scripts": {
